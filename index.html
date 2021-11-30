@@ -197,6 +197,7 @@
                         <div class="info-box">
                             <h6>Lugar</h6>
                             <p>Parroquia San Jorge</p>
+                            <br><br>
                             <!-- <a href="#" data-evento="Ceremonia" class="boton confirmar-asistencia">Confirmar asistencia</a> -->
                         </div>
 
@@ -480,10 +481,10 @@
 
     <!-- Musica -->
     <!-- Si esta en modo "Modelo" muestro el reproductor de musica sin musica -->
-    <div id="controlador-musica">
+    <!-- <div id="controlador-musica">
         <div id="play-pause-music" class="music-anim-icon">
         </div>
-    </div>
+    </div> -->
 
     <!-- Modal asistencia-->
     <div id="modalAsistencia" class="modal fade" tabindex="-1">
@@ -505,42 +506,14 @@
                     <div class="formulario-content">
                         <form id="formAsistencia" action="#">
                             <div class="form-group d-flex justify-content-around custom-control custom-radio custom-control-inline">
-                                <div class="form-check">
-                                    <input class="form-check-input custom-control-input" type="radio" name="asistencia" id="1" value="Si" checked="">
-                                    <label class="form-check-label custom-control-label" for="1">
-                                        Si! Confirmo                
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="custom-control-input" type="radio" name="asistencia" id="2" value="No">
-                                    <label class="custom-control-label" for="2">
-                                        No puedo :(                
-                                    </label>
-                                </div>
+                                Para confirmar asistencia favor, completar el formulario
                             </div>
-
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="nombreAsistente" name="nombre" placeholder="Ingrese su nombre completo">
-                            </div>
-
-                            <div class="form-group">
-                                <textarea id="comentariosAsistente" class="form-control" name="comentarios" rows="2" placeholder="Ingrese algun dato importante, Ej: Soy vegetariano"></textarea>
-                            </div>
-
-                            <input id="eventoAsistencia" type="hidden" name="evento" value="">
-                            <input type="hidden" name="invitacion" value="">
-                            <input type="hidden" name="token" value="">
-                            <input type="hidden" name="lang" value="es">
-                            <input type="hidden" name="country" value="py">
-
                         </form>
                     </div>
-
-                    <div class="msj-content d-flex flex-column justify-content-center"></div>
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" id="sendAsistencia" class="boton">Enviar</button>
+                    <a type="button" class="boton">Abrir formulario</button>
                 </div>
             </div>
         </div>
@@ -841,7 +814,7 @@
     </script>
 
     <!-- Animaciones de diseño -->
-    <script>
+    <!-- <script>
         let svgContainerMusicAnimIcon = document.querySelector('.music-anim-icon');
         let animMusicAnimIcon = bodymovin.loadAnimation({
             wrapper: svgContainerMusicAnimIcon,
@@ -850,11 +823,11 @@
             loop: true,
             path: "./js/music-player-icon.json"
         });
-    </script>
+    </script> -->
 
-    <script>
+    <!-- <script>
         animMusicAnimIcon.play();
-    </script>
+    </script> -->
 
     <!-- Animacion Flores-->
     <script>
