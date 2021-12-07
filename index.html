@@ -1513,24 +1513,24 @@
 
             // Aceptar webp?
             if (support_format_webp()) {
-                var imageInstagramParallax = 'img/instagram_mobile.webp';
+                var imageInstagramParallax = './img/instagram.webp';
             } else {
-                var imageInstagramParallax = 'img/instagram_mobile.jpg';
+                var imageInstagramParallax = './img/instagram.jpg';
             }
 
         } else {
 
             // Aceptar webp?
             if (support_format_webp()) {
-                var imageInstagramParallax = 'img/instagram.webp';
+                var imageInstagramParallax = './img/instagram.webp';
             } else {
-                var imageInstagramParallax = 'img/instagram.jpg';
+                var imageInstagramParallax = './img/instagram.jpg';
             }
 
         }
 
         $('.instagram').parallax({
-            imageSrc: _pathProducto + imageInstagramParallax
+            imageSrc: imageInstagramParallax
         });
     </script>
 
@@ -1720,24 +1720,24 @@
 
             // Aceptar webp?
             if (support_format_webp()) {
-                var imageParallax = 'img/fedetere01.webp';
+                var imageParallax = './img/fedetere01.webp';
             } else {
-                var imageParallax = 'img/fotos/fedetere01.jpg';
+                var imageParallax = './img/fotos/fedetere01.jpg';
             }
 
         } else {
 
             // Aceptar webp - Imagen portada
             if (support_format_webp()) {
-                var imageParallax = 'img/fedetere01.webp';
+                var imageParallax = './img/fedetere01.webp';
             } else {
-                var imageParallax = 'img/fotos/fedetere01.jpg';
+                var imageParallax = './img/fotos/fedetere01.jpg';
             }
 
         }
 
         $('.portada').parallax({
-            imageSrc: _pathProducto + imageParallax
+            imageSrc: imageParallax
         });
     </script>
 
