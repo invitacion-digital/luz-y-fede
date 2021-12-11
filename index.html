@@ -59,7 +59,13 @@
 
     <!-- Loader -->
     <!-- START PRELOADER AREA-->
+    <div class="preloader-area" style="display: none;">
 
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="loader" style="display: none;"></div>
+        </div>
+
+    </div>
     <!-- END PRELOADER AREA -->
 
     <!-- Portada -->
@@ -280,28 +286,28 @@
                 <div>
                     <div class="polaroid">
                         <a href="#" data-fancybox="galeria">
-                            <img src="./img/fede&tere02.jpg" alt="">
+                            <img src="./img/fede&tere02.webp" alt="">
                         </a>
                     </div>
                 </div>
                 <div>
                     <div class="polaroid">
                         <a href="#" data-fancybox="galeria">
-                            <img src="./img/fede&tere13.jpg" alt="">
+                            <img src="./img/fede&tere13.webp" alt="">
                         </a>
                     </div>
                 </div>
                 <div>
                     <div class="polaroid">
                         <a href="#" data-fancybox="galeria">
-                            <img src="./img/fede&tere28.jpg" alt="">
+                            <img src="./img/fede&tere28.webp" alt="">
                         </a>
                     </div>
                 </div>
                 <div>
                     <div class="polaroid">
                         <a href="#" data-fancybox="galeria">
-                            <img src="./img/fede&tere15.jpg" alt="">
+                            <img src="./img/fede&tere15.webp" alt="">
                         </a>
                     </div>
                 </div>
@@ -1512,21 +1518,20 @@
         if ($(window).width() < 768) {
 
             // Aceptar webp?
-            // if (support_format_webp()) {
-            //     var imageInstagramParallax = './img/instagram.webp';
-            // } else {
-            var imageInstagramParallax = './img/fede&tere06.jpg';
-            // }
+            if (support_format_webp()) {
+                var imageInstagramParallax = './img/fede&tere06.webp';
+            } else {
+                var imageInstagramParallax = './img/fede&tere06.jpg';
+            }
 
         } else {
 
             // Aceptar webp?
-            // if (support_format_webp()) {
-            //     var imageInstagramParallax = './img/instagram.webp';
-            // } else {
-            var imageInstagramParallax = './img/fede&tere06.jpg';
-            // }
-
+            if (support_format_webp()) {
+                var imageInstagramParallax = './img/fede&tere06.webp';
+            } else {
+                var imageInstagramParallax = './img/fede&tere06.jpg';
+            }
         }
 
         $('.instagram').parallax({
@@ -1722,7 +1727,7 @@
             if (support_format_webp()) {
                 var imageParallax = './img/fedetere01.webp';
             } else {
-                var imageParallax = './img/fotos/fedetere01.jpg';
+                var imageParallax = './img/fedetere01.jpg';
             }
 
         } else {
@@ -1731,7 +1736,7 @@
             if (support_format_webp()) {
                 var imageParallax = './img/fede&teremasazul31.webp';
             } else {
-                var imageParallax = './img/fotos/fede&teremasazul31.jpg';
+                var imageParallax = './img/fede&teremasazul31.jpg';
             }
 
         }
